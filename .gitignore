@@ -1,0 +1,16 @@
+
+function palindrome(str) {
+  
+  var a = str.replace(/[^\w\s)]|[_]|[ ]/g,'').toLowerCase();
+  var b = a.split('').reverse().toString();
+  b=b.replace(/[,]/g,'');
+  if(b===a)
+    return true;
+  else
+    return false;
+  
+}
+
+
+
+palindrome("A man, a plan, a canal. Panama");
